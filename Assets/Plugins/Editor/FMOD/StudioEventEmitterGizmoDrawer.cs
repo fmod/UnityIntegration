@@ -10,7 +10,7 @@ namespace FMODUnity
 
     public class StudioEventEmitterGizoDrawer
     {
-        #if UNITY_4_6 || UNITY_4_7
+        #if UNITY_5_0 || UNITY_5_1
         [DrawGizmo(GizmoType.Selected | GizmoType.Active | GizmoType.NotSelected)]
         #else
         [DrawGizmo(GizmoType.Selected | GizmoType.Active | GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)]

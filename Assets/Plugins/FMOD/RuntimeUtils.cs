@@ -448,7 +448,7 @@ namespace FMODUnity
                     }
                     return FMODPlatform.None;
                 #else
-                    if (EditorUserBuildSettings.metroSDK == MetroSDK.PhoneSDK81)
+                    if (EditorUserBuildSettings.wsaSDK == WSASDK.PhoneSDK81)
                     { 
                         return FMODPlatform.WindowsPhone;
                     }

@@ -11,7 +11,7 @@ namespace FMODUnity
         static void ShowFindAndReplace()
         {
             var window = CreateInstance<FindAndReplace>();
-            #if UNITY_4_6 || UNITY_4_7
+            #if UNITY_5_0 || UNITY_5_1
             window.title = "FMOD Find and Replace";
             #else
             window.titleContent = new GUIContent("FMOD Find and Replace");

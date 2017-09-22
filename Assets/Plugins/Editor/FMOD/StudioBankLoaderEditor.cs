@@ -43,8 +43,8 @@ namespace FMODUnity
 
                 var browser = EventBrowser.CreateInstance<EventBrowser>();
 
-                #if UNITY_4_6 || UNITY_4_7
-				browser.title  = "Select FMOD Bank";
+                #if UNITY_5_0 || UNITY_5_1
+                browser.title  = "Select FMOD Bank";
                 #else
                 browser.titleContent = new GUIContent("Select FMOD Bank");
                 #endif
