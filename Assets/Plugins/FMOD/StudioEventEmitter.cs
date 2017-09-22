@@ -38,7 +38,11 @@ namespace FMODUnity
                 eventDescription.getSampleLoadingState(out loadingState);
                 while(loadingState == FMOD.Studio.LOADING_STATE.LOADING)
                 {
+#if WINDOWS_UWP
+                    System.Threading.Tasks.Task.Delay(1).Wait();
+#else
                     System.Threading.Thread.Sleep(1);
+#endif
                     eventDescription.getSampleLoadingState(out loadingState);
                 }
             }
